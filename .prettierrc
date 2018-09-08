@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "singleQuote": true,
+  "tslintIntegration": true,
+  "eslintIntegration": true,
+  "stylelintIntegration": true,
+  "printWidth": 80,
+  "trailingComma": "all"
+}
