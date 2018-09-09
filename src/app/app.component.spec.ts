@@ -17,15 +17,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'angular6-sass-start'`, async(() => {
+  it(`should have as title 'ng6-ngzorro-sass-demo'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular6-sass-start');
+    expect(app.title).toEqual('ng6-ngzorro-sass-demo');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular6-sass-start!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ng6-ngzorro-sass-demo!');
   }));
 });
