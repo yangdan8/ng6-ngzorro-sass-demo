@@ -7,7 +7,6 @@
 
 # dependencies
 /node_modules
-# /package-lock.json
 
 # IDEs and editors
 /.idea
@@ -31,13 +30,9 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
+yarn-error.log
 testem.log
 /typings
-yarn-error.log
-
-# e2e
-/e2e/*.js
-/e2e/*.map
 
 # System Files
 .DS_Store
