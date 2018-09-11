@@ -8,11 +8,7 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
-      },
+      "schematics": {},
       "targets": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -27,14 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/ajv/dist/ajv.bundle.js",
-              "node_modules/@antv/g2/dist/g2.min.js",
-              "node_modules/@antv/data-set/dist/data-set.min.js",
-              "node_modules/@antv/g2-plugin-slider/dist/g2-plugin-slider.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -53,14 +44,6 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
-            },
-            "hmr": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.hmr.ts"
-                }
-              ]
             }
           }
         },
@@ -72,10 +55,6 @@
           "configurations": {
             "production": {
               "browserTarget": "ng6-ngzorro-sass-demo:build:production"
-            },
-            "hmr": {
-              "browserTarget": "ng6-ngzorro-sass-demo:build:hmr",
-              "hmr": true
             }
           }
         },
@@ -93,14 +72,9 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/ajv/dist/ajv.bundle.js",
-              "node_modules/@antv/g2/dist/g2.min.js",
-              "node_modules/@antv/data-set/dist/data-set.min.js",
-              "node_modules/@antv/g2-plugin-slider/dist/g2-plugin-slider.min.js"
-            ],
+            "scripts": [],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -149,41 +123,5 @@
       }
     }
   },
-  "defaultProject": "ng6-ngzorro-sass-demo",
-  "schematics": {
-    "ng-alain:module": {
-      "routing": true,
-      "spec": false
-    },
-    "ng-alain:list": {
-      "spec": false
-    },
-    "ng-alain:edit": {
-      "spec": false,
-      "modal": true
-    },
-    "ng-alain:view": {
-      "spec": false,
-      "modal": true
-    },
-    "ng-alain:curd": {
-      "spec": false
-    },
-    "@schematics/angular:module": {
-      "routing": true,
-      "spec": false
-    },
-    "@schematics/angular:component": {
-      "spec": false,
-      "flat": false,
-      "inlineStyle": true,
-      "inlineTemplate": false
-    },
-    "@schematics/angular:directive": {
-      "spec": false
-    },
-    "@schematics/angular:service": {
-      "spec": false
-    }
-  }
+  "defaultProject": "ng6-ngzorro-sass-demo"
 }
