@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "vsicons.projectDetection.autoReload": true,
+  "team.showWelcomeMessage": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.tslintIntegration": true,
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "prettier.printWidth": 80
+}
