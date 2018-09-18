@@ -4,3 +4,8 @@
   参数name = {{name}}<br />
   参数age = {{age}}
 </p>
+<hr>
+<button nz-button nzType="primary" (click)="getHeroes()">获取清单</button>
+<p *ngFor="let item of heroes">
+  {{item.id}}
+</p>

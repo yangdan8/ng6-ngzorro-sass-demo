@@ -1,16 +1,8 @@
 {
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "vsicons.projectDetection.autoReload": true,
-  "team.showWelcomeMessage": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "editor.formatOnType": true,
   "editor.formatOnSave": true,
-  "prettier.singleQuote": true,
-  "prettier.tslintIntegration": true,
-  "prettier.eslintIntegration": true,
-  "prettier.stylelintIntegration": true,
-  "git.enableSmartCommit": true,
-  "explorer.confirmDelete": false,
-  "prettier.printWidth": 80
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.ts": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "tslint.autoFixOnSave": true,
+  "tslint.jsEnable": true
 }

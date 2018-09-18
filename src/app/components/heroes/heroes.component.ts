@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from '@services/hero.service';
-import { Hero } from '@entities/hero';
+import { Hero } from '@entities/Hero';
 import { ActivatedRoute } from '@angular/router';
+import { AjaxResult } from '@entities/AjaxResult';
 
 @Component({
   selector: 'app-heroes',
@@ -12,13 +13,13 @@ export class HeroesComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private heroService: HeroService
-  ) {}
+  ) { }
 
   id: string;
   name: string;
   age: string;
 
-  heroes: Hero[];
+  heroes: Hero[] = [];
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
@@ -27,6 +28,8 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().subscribe((json: AjaxResult<Hero>) => {
+      this.heroes = json.data;
+    });
   }
 }
